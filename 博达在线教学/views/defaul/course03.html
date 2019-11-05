@@ -1,0 +1,78 @@
+{{include 'defaul/public/coursetop.html'}}
+<div class="depart">
+    <div class="head">分类：</div>
+    <div class="choice">
+
+    </div>
+</div>
+
+</div>
+</div>
+<div class="newCourse"><span class="news">最新</span><span class="news">最热</span></div>
+
+</div>
+
+<div class="container clearfix">
+    <div class="course-zz">
+
+        <div class="course-list">
+            <div class="js-course-lists">
+                <ul>
+                    {{each cateResult}}
+                    <li>
+                        <a href="#">{{$value.title}}</a>
+                        <div>
+                            <a href="content/{{@$value._id}}"> <img width="240px" height="250px" alt="aotm1" src="{{$value.img_url}}"></a>
+                        </div>
+                        <h5 class="content">
+                            <span>关键字:{{$value.keywords}}</span>&#160;
+                            <span>类型:{{$value.catename}}</span>&#160;
+                            <span>作者:{{$value.author}}</span>
+                        </h5>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+
+        </div>
+
+        <!--<div class="course-tool-ba clear">
+
+        </div>-->
+        <div class="container-content"></div>
+
+        <div class="course-page-num clear">
+            <div class="pageCenter">
+
+
+
+            </div>
+
+        </div>
+        <div id="page" class="pagination" style="float:right"></div>
+
+    </div>
+
+</div>
+
+{{include 'defaul/public/coursefooter.html'}}
+
+<script>
+
+    $('#page').jqPaginator({
+        totalPages: {{totalPages}},
+    visiblePages: 5,
+        currentPage: {{page}},
+    onPageChange: function (num, type) {
+
+        if(type=='change'){
+            {{if pid}}
+            location.href="/course02?pid={{pid}}&page="+num;
+
+            {{else}}
+            location.href="/course02?page="+num;
+            {{/if}}
+        }
+    }
+    });
+</script>

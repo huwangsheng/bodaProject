@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{setting.site_title}}</title>
+    <meta name="Keywords" content="{{setting.site_keywords}}" />
+    <meta name="Description" content="{{setting.site_description}}" />
+    <meta name="site_icp" content="{{setting.site_icp}}" />
+    <meta name="site_address" content="{{setting.site_address}}" />
+    <meta name="site_tel" content="{{setting.site_tel}}" />
+	<link rel="stylesheet" type="text/css" href="defaul/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="defaul/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="defaul/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="defaul/css/swiper.min.css" />
+    <link rel="stylesheet" href="defaul/tianjia/main.css" />
+    <link rel="stylesheet" href="defaul/tianjia/magic.min.css" />
+	<script type="text/javascript" src="defaul/js/swiper.min.js"></script>
+
+
+	
+</head>
+<div>
+{{include 'defaul/public/header.html'}}
+<div id="banner-wrapper">
+    	
+        	        	
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        {{each focus}}
+      <div class="swiper-slide">
+      	<a href="/course"> <img src="{{$value.pic}}" alt="{{$value.title}}"  style="height:400px"/></a>
+      </div>
+{{/each}}
+     
+    </div>
+     <div class="swiper-pagination"></div>
+     
+     <div class="swiper-button-prev swiper-button-white"></div>
+     <div class="swiper-button-next swiper-button-white"></div>
+     
+  </div>
+ 
+    
+</div>
+<!--
+添加部分
+-->
+    <div id="main">
+    <div class="container">
+    <div style="text-align:center">
+        <font color='white'>
+            <h2>我们的服务 Our Services </h2>
+            <h3>在线开放平台、课程视频教学、学习安排履历</h3>
+        </font>
+
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <div class="box-wrapper">
+                开放的教学平台<span class="name">提供安全免费的服务</span>
+                <div class="row">累计使用999+</div>
+            </div>
+        </div>
+        <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+            <img src="defaul/tianjia/1.jpg" alt="" />
+        </div>
+        <a class="link" href="#" title="请登录后观看"></a>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <div class="box-wrapper">
+                视频课程教学<span class="name">提供在线观看学习</span>
+                <div class="row">为您量身筛选精品课程</div>
+            </div>
+        </div>
+        <div class="box-overlay magictime" data-hover="bombRightOut" data-return="">
+            <img src="defaul/tianjia/2.jpg" alt="" />
+        </div>
+        <a class="link" href="#"  title="请登录后观看"></a>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <div class="box-wrapper">
+                建立学习履历<span class="name">提供历史学习记录</span>
+                <div class="row">为您推荐所感兴趣的课程</div>
+            </div>
+        </div>
+        <div class="box-overlay magictime" data-hover="slideRight" data-return="slideRightRetourn">
+            <img src="defaul/tianjia/3.jpg" alt="" />			</div>
+        <a class="link" href="#"  title="请登录后观看"></a>
+    </div>
+
+</div>
+<script src="defaul/tianjia/jquery.1.10.2.min.js"></script>
+<script src="defaul/tianjia/main.js"></script>
+</div>
+
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<!--
+//添加部分  连同换行与JS文件
+-->
+<!--<div id="main">       -->
+
+        <!--<div id="main_center-wrapper">-->
+               <!--<div class="main_center">              -->
+                   <!--<h2>我们的优势 Our Advantages </h2>-->
+                   <!--<h3>独一无二的设计、造国际品质的产品，行无微不至的服务</h3>-->
+                   <!--<ul>-->
+	                   <!--<li><h3>我们的设计 Our Design</h3><h4>从实地到方案敲定再到设计出图，每一步都有优秀的设计团队全程跟踪，为您打造出最合适的作品是最诚恳的义务。</h4><img src="defaul/images/mian2_image1.jpg" /></li>-->
+	                   <!--<li><h3>我们的设计 Our Design</h3><h4>从实地到方案敲定再到设计出图，每一步都有优秀的设计团队全程跟踪，为您打造出最合适的作品是最诚恳的义务。</h4><img src="defaul/images/mian2_image2.jpg" /></li>-->
+	                   <!--<li style=" margin-right:0;"><h3>我们的设计 Our Design</h3><h4>从实地到方案敲定再到设计出图，每一步都有优秀的设计团队全程跟踪，为您打造出最合适的作品是最诚恳的义务。</h4><img src="defaul/images/mian2_image3.jpg" /></li>-->
+                   <!--</ul>-->
+               <!--</div>-->
+        <!--</div>-->
+        <div id="main_bottom-wrapper">
+                  <div class="main_bottom">
+                       <h2>原创案例 Successful Case </h2>
+                       <h3>始终以建设温馨、和谐的家园、提升你的居家生活品味为己任。</h3>
+                       <div class="main_bottom-nav clear">
+                           {{each list}}
+                           <a href="#"  title="请先登录后观看">{{$value.title}}</a>
+                           {{/each}}
+                       <!--<a href="#" style=" font-weight:900; background:#f75a53;">服务行业  <img src="defaul/images/jiao.png" /></a>-->
+                       <!--<a href="#">教育行业</a>-->
+                       <!--<a href="#">房产行业</a>-->
+                       <!--<a href="#">能源行业</a>-->
+                       </div>
+                       <div class="main_bottom-table">
+                           <ul  class="clear">
+
+
+                               <!--{{each list}}-->
+
+                               <!--<li>-->
+
+                                   <!--<a href="/login"><img src="{{$value.img_url}}" /></a>-->
+
+                                   <!--<p>{{$value.title}}</p>&#160;-->
+                                   <!--&lt;!&ndash;<span>类型:{{$value.catename}}</span>&#160;&ndash;&gt;-->
+                                   <!--&lt;!&ndash;<span>作者:{{$value.author}}</span>&ndash;&gt;-->
+
+                               <!--</li>-->
+
+                               <!--{{/each}}-->
+                           
+                           <li><a href="#"><img src="defaul/images/mian3_image1.jpg" alt="&nbsp;" title="请先登录后观看"/></a></li>
+                           <li><a href="#"><img src="defaul/images/mian3_image2.jpg" alt="&nbsp;" title="请先登录后观看"/></a></li>
+                           <li style=" margin-right:0"><a href="#"><img src="defaul/images/mian3_image3.jpg"  alt="&nbsp;" title="请先登录后观看"/></a></li>
+                           <li><a href="#" style=" margin-bottom:0"><img src="defaul/images/mian3_image4.jpg" alt="&nbsp;" title="请先登录后观看" /></a></li>
+                           <li><a href="#" style=" margin-bottom:0"><img src="defaul/images/mian3_image5.jpg" alt="&nbsp;" title="请先登录后观看"/></a></li>
+                           <li style=" margin-right:0; margin-bottom:0"><a href="#"><img src="defaul/images/mian3_image6.jpg"  alt="&nbsp;" title="请先登录后观看"/></a></li>
+
+                           </ul>
+                           
+                       
+                       
+                       </div>
+                      
+                      
+                  
+                  
+                  </div>
+         
+        
+        
+        </div>
+</div>
+
+
+{{include 'defaul/public/footer.html'}}
+        
+  <script>
+    var mySwiper = new Swiper('.swiper-container',{
+    	  autoplay:true,
+		  pagination: {
+		    el: '.swiper-pagination',
+		  },
+		   navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  }
+		
+	})
+  </script>
+        
+    
+</body>
+</html>

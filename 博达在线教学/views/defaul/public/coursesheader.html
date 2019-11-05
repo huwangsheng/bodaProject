@@ -1,0 +1,38 @@
+<header class="nav-section" id="nav-section">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-2 col-6">
+                <a href="#" class="logo" title="博达教育欢迎您">
+                    <img src="/defaul/images/bodaOnlieEdu.jpg" alt="logo" />
+                </a>
+            </div>
+            <div class="col-md-10 col-6 main-menu">
+                <ul>
+                    {{each classes}}
+                    <li>
+                        <a href="{{$value.url}}">{{$value.title}}</a>
+                    </li>
+                    {{/each}}
+
+                    <li><a href="#" class="menu-btn" title="博达企业文化">FROM ZERO TO HERO</a></li>
+                </ul>
+
+                <div class="mobile-menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                        <path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="mobile-menu-wrap">
+    <div class="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  width="24px"height="24px">
+            <path
+                    d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+            />
+        </svg>
+    </div>
+    <div id="mobile-menu"></div>
+</nav>

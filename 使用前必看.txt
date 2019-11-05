@@ -1,0 +1,14 @@
+1.使用技术 Node.js 的koa框架
+
+2.开发工具： WebStorm(事先安装nodejs和mongodb运行环境-window)
+
+3.部署上线工具：Xshell6 ，阿里云云服务器，和万网的域名，使用nginx进行ip映射(事先安装nodejs和mongodb运行环境-linux)
+
+5.项目运行之前要npm install 下载依赖
+
+6.node app.js云服务器上运行(端口8080)
+
+
+作者：胡旺生
+
+时间：2019年11月5日

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>成功案例</title>
+<title>heder_nav-menu</title>
+<link rel="stylesheet" type="text/css" href="/defaul/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/defaul/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/defaul/css/heder_nav-menu.css"/>
+<link rel="stylesheet" type="text/css" href="/defaul/css/successful_case.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="defaul/assets/img/favicon.png"  />
+</head>
+
+<body>
+{{include 'defaul/public/header.html'}}
+<div id="header_nav-wrapper">
+    <div class="header_nav">
+        <h2>{{list.keywords}} &#160; <span style="font-size: 13px">{{list.description}}</span>
+    
+        </h2>
+    </div>
+
+
+
+</div>
+
+<div id="header_title-wrapper">
+
+    <div class="header_title clear">
+        <p >
+            {{each list1}}
+        <a href="#">{{@value.title}}</a>
+            {{/each}}
+        <!--<a href="#">教育行业</a>-->
+        <!--<a href="#">房地产业</a>-->
+        <!--<a href="#" style="margin-right:20px;">能源行业</a>-->
+
+        </p>
+    </div>
+
+
+</div>
+
+
+<div id="main_wrapper">
+
+    
+    <div class="content">
+	  <h2 class="title">{{list.title}}</h2>
+		{{@list.content}}
+        <!--<video width="2000px" height="500px" controls="controls">-->
+        <!--<source src="{{_HOST_}}/public/upload/ueditor/video/20190927/1569565253593500559.mp4" type="video/mp4"></source>-->
+        <!--</video>-->
+    </div>
+
+
+
+
+</div>
+
+
+
+{{include 'defaul/public/footer.html'}}
+        
+
+
+
+
+</body>
+</html>

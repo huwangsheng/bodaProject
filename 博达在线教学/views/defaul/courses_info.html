@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png"  />
+    <title>博达 -课程详情</title>
+    
+    <!--在线引用  -->
+	 <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	 <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!--引用谷歌字体 -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet"/>
+    <!-- 引用css样式 -->
+    <link rel="stylesheet" href="/defaul/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/defaul/assets/css/icofont.min.css" />
+    <link rel="stylesheet" href="/defaul/assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/defaul/assets/css/featherlight.min.css" />
+    <link rel="stylesheet" href="/defaul/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/defaul/assets/css/style.css" />
+    <link rel="stylesheet" href="/defaul/assets/css/courses/style.css">
+    <link rel="stylesheet" href="/defaul/fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/defaul/fonts/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/defaul/fonts/font-awesome/css/font-awesome.min.css">
+    
+
+    
+ <style type="text/css">
+
+ </style>
+ 
+ 
+
+  </head>
+  <body>
+    <!-- 预加载 -->
+    <div id="preloader">
+      <div class="pre-container">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 导航部分 -->
+    {{include 'defaul/public/coursesheader.html'}}
+    <!-- //导航 -->
+
+		<!-- 标签部分 -->
+    <section class="header-section">
+
+        <section class="single-course section-padding-large">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 single-course-content">
+                        <div class="single-title">
+                            <h2>{{list.keywords}} &#160; <span style="font-size: 13px">{{list.description}}</span></h2>
+                        </div>
+                        <div class="single-course-info">
+                            <figure class="single-course-images">
+                                <video width="850px" height="500px" controls="controls">
+                                <source src="{{_HOST_}}/public/upload/ueditor/video/20191011/1570778121824906397.mp4" type="video/mp4"></source>
+                                </video>
+                                <!--<img src="/defaul/img/info-course.jpg" alt="{{list.title}} 基础知识">-->
+                            </figure>
+                            <div class="course-teacher-cat display-flex">
+                                <div class="teacher-cat">
+                                    <ul class="display-flex">
+                                        <li class="display-flex">
+                                            <a href="#">
+                                                <img src="/defaul/assets/img/t1.png" alt="Miss.Lee">
+                                            </a>
+                                            <div class="teacher-cat-item">
+                                                <span>导师:</span>
+                                                <a href="#">{{list.author}}</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="teacher-cat-item">
+                                                <span>课程名称</span>
+                                                <a href="#">{{list.title}}</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="teacher-cat-item">
+                                                <span title="功能暂未开放">评价</span>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="au-btn au-btn-hover" title="暂未开放此课程">购买此课程</a>
+                            </div>
+                        </div>
+                        <div class="single-course-tab">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="false"><i class="fas fa-user"></i>简介</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="curriculum-tab" data-toggle="tab" href="#curriculum" role="tab" aria-controls="curriculum" aria-selected="false"><i class="fas fa-bookmark"></i>课时</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false"><i class="fas fa-star"></i>评价</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                    <div class="course-overview">
+                                        <div class="course-desc">
+                                            <h4 class="course-tab-title">课程简介</h4>
+                                            <p class="course-desc-content">
+                                                {{@list.content}}
+                                            </p>
+                                            <p class="course-desc-content">
+                                              	  学习内容：{{list.title}}掌握绘画的基础理论，学习色彩原理和选取颜色、范围选取、工具与绘图、图像编辑、控制图像色彩和色调、使用图层、路径、通道和蒙板的应用、滤镜等。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- FQA -->
+                                    <div class="fqa">
+                                        <h4 class="title">A&Q</h4>
+                                        <div class="fqa-content">
+                                                <ul id="accordion">
+                                                    <li class="card">
+                                                        <div class="card-header" id="headingOne">
+                                                            <div class="title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
+                                                               	 什么是{{list.title}}?
+                                                            </div>
+                                                        </div>
+
+                                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                            <div class="card-body content">
+                                                                {{list.title}}是世界顶尖级的图像设计与制作工具软件。
+																						                                                                图像处理是对已有的位图图像进行编辑加工处理以及运用一些特殊效果，其重点在于对图像的处理加工。
+																						                                                                在表现图像中的阴影和色彩的细微变化方面或者进行一些特殊效果处理时，使用位图形式是最佳的选择，它在这方面的优点是矢量图无法比拟的。
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card">
+                                                        <div class="card-header" id="headingTwo">
+                                                            <div class="title collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
+                                                              	  这门课适用于什么地方?
+                                                            </div>
+                                                        </div>
+                                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                            <div class="card-body content">
+                                                               	 平面广告设计、UI、效果图调整、数码照片处理等
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card">
+                                                        <div class="card-header" id="headingThree">
+                                                            <div class="title collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
+                                                                	如果我购买了这门课我能学习多久
+                                                            </div>
+                                                        </div>
+                                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                            <div class="card-body content">
+                                                             			从您购买课程开始3年内都是免费学习的
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="card active">
+                                                        <div class="card-header" id="headingFour">
+                                                            <div class="title collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="button">
+                                                                	条款和条件
+                                                            </div>
+                                                        </div>
+                                                        <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                                            <div class="card-body content">
+                                                                	本站均由Study100用户协议保障
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab">
+                                    <ul id="curriculum-content" class="curriculum-content">
+                                        <li class="card active">
+                                            <div class="card-header" id="headingcurriculumOne">
+                                                <div class="title" data-toggle="collapse" data-target="#curriculumOne" aria-expanded="true" aria-controls="curriculumOne" role="button">
+                                                 		第一章
+                                                </div>
+                                                <span>0/7</span>
+                                            </div>
+
+                                            <div id="curriculumOne" class="collapse show" aria-labelledby="headingcurriculumOne" data-parent="#curriculum-content">
+                                                <div class="card-body content">
+                                                    <ul>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>色彩基础知识
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>05:20</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>灰度色彩模式
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>02:00</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>图像通道
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>04:10</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>CMYK色彩模式
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>03:20</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>色彩模式的选择
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>06:30</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>颜色的选取
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>05:20</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>HSB色彩模式
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>06:30</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="card">
+                                            <div class="card-header" id="headingcurriculumTwo">
+                                                <div class="title" data-toggle="collapse" data-target="#curriculumTwo" aria-expanded="true" aria-controls="curriculumTwo" role="button">
+                                        			           第二章
+                                                </div>
+                                                <span>0/4</span>
+                                            </div>
+
+                                            <div id="curriculumTwo" class="collapse show" aria-labelledby="headingcurriculumTwo" data-parent="#curriculum-content">
+                                                <div class="card-body content">
+                                                    <ul>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="far fa-file"></i>图像尺寸
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>02:00</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>点阵格式图像
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>04:00</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>矢量格式图像
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>06:25</span>
+                                                        </li>
+                                                        <li class="display-flex">
+                                                            <a href="#">
+                                                                <span>
+                                                                    <i class="fas fa-play-circle"></i>图像格式的选择
+                                                                </span>
+                                                            </a>
+                                                            <span class="lesson-time"><i class="far fa-clock"></i>04:20</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="right-sidebar">
+                            <div class="widget-featured-course">
+                                <div class="widget-title">
+                                    <h2>课程简介</h2>
+                                </div>
+                                <ul>
+                                    </li>
+                                    <li class="display-flex">
+                                        <span><i class="fas fa-book"></i>课程数</span>
+                                        <span>80</span>
+                                    </li>
+                                    <li class="display-flex">
+                                        <span><i class="fas fa-signal"></i>适合于</span>
+                                        <span>初学者</span>
+                                    </li>
+                                    <li class="display-flex">
+                                        <span><i class="fas fa-puzzle-piece"></i>检测</span>
+                                        <span>01</span>
+                                    </li>
+                                    <li class="display-flex">
+                                        <span><i class="fas fa-users"></i>学生</span>
+                                        <span>42</span>
+                                    </li>
+                                    <li class="display-flex">
+                                        <span><i class="fas fa-check-square"></i>浏览量</span>
+                                        <span>800+</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget_lastest_entries">
+                                <div class="widget-title">
+                                    <h2>热门课程</h2>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <figure>
+                                            <a href="/course"><img src="/defaul/img/k2.jpg" alt="YouCore系统思维应用" title="进入详细课程"></a>
+                                        </figure>
+                                        <div class="info">
+                                            <h3 class="title">
+                                                <a href="/course">YouCore系统思维应用</a>
+                                            </h3>
+                                            <span class="price notfree">￥77</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="/course"><img src="/defaul/img/k3.jpg" alt="职业发展规划" title="进入详细课程"></a>
+                                        </figure>
+                                        <div class="info">
+                                            <h3 class="title">
+                                                <a href="/course">职业发展规划</a>
+                                            </h3>
+                                            <span class="price notfree">￥150</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <figure>
+                                            <a href="/course"><img src="/defaul/img/k4.jpg" alt="从零开始学吉他" title="进入详细课程"></a>
+                                        </figure>
+                                        <div class="info">
+                                            <h3 class="title">
+                                                <a href="/course">从零开始学吉他</a>
+                                            </h3>
+                                            <span class="price notfree">￥120</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+		<!-- //标签 -->
+		
+    <!-- 底部 -->
+    {{include 'defaul/public/coursesfooter.html'}}
+    <!--//底部-->
+    <!-- Scroll Top -->
+    <div class="scroll-top">
+      <i class="icofont-rounded-up"></i>
+    </div>
+    <script src="/defaul/assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/defaul/assets/js/popper.min.js"></script>
+    <script src="/defaul/assets/js/bootstrap.min.js"></script>
+    <script src="/defaul/assets/js/owl.carousel.min.js"></script>
+    <script src="/defaul/assets/js/featherlight.min.js"></script>
+    <script src="/defaul/assets/js/main.js"></script>
+  </body>
+</html>

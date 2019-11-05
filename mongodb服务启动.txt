@@ -1,0 +1,7 @@
+命令行 win+R
+
+
+启动服务:mongod -dbpath=c:/data   
+
+进入数据库：mongo
+数据库导出表：mongodump -h 127.0.0.1:27017 -d news -o C:\kom_cms （直接使用，不用到mongodb的斌目录下）

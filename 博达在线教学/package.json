@@ -1,0 +1,24 @@
+{
+  "name": "koa_cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "koa-art-template": "^1.1.1",
+    "koa-multer": "^1.0.2",
+    "silly-datetime": "^0.1.2",
+    "svg-captcha": "^1.4.0",
+    "ueditor": "^1.2.3"
+  },
+  "pkg": {
+
+    "assets": "views/**/*"
+
+  }
+}

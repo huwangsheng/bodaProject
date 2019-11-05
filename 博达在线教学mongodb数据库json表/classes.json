@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5d90018a51767f5520ac2df9"},"add_time":{"$date":"2019-09-29T00:57:46.638Z"},"pic":"","sort":"1","status":"1","title":"用户登录","url":"/login"}
+{"_id":{"$oid":"5d90019f51767f5520ac2dfa"},"add_time":{"$date":"2019-09-29T00:58:07.316Z"},"pic":"","sort":"2","status":"1","title":"用户注册","url":"/register"}
+{"_id":{"$oid":"5d9001bf51767f5520ac2dfb"},"add_time":{"$date":"2019-09-29T00:58:39.814Z"},"pic":"","sort":"3","status":"1","title":"课程","url":"/course"}
+{"_id":{"$oid":"5d9001e151767f5520ac2dfc"},"add_time":{"$date":"2019-09-29T00:59:13.353Z"},"pic":"","sort":"4","status":"1","title":"个人中心","url":"/percen"}
+{"_id":{"$oid":"5d9003f4a23ba63510cac4ba"},"add_time":{"$date":"2019-09-29T01:08:04.210Z"},"pic":"","sort":"5","status":"1","title":"关于我们","url":"/about"}
+{"_id":{"$oid":"5d900439a23ba63510cac4bb"},"add_time":{"$date":"2019-09-29T01:10:39.865Z"},"pic":"","sort":"6","status":0,"title":"联系我们","url":"/connect"}

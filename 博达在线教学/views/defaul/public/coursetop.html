@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>在线教学</title>
+    <link rel="stylesheet" href="/course/css/public.css" />
+    <link rel="stylesheet" type="text/css" href="/course/css/dmb.header.css"/>
+    <link rel="stylesheet" type="text/css" href="/course/css/zhanshi.css"/>
+    <link rel="stylesheet" href="/course/css/centerRight.css"/>
+    <link rel="stylesheet" href="/course/css/dmb.bottom.css"/>
+    <link rel="stylesheet" href="/course/css/zz.css" />
+    <link rel="stylesheet" type="text/css" href="/course/css/Ngrade_login.css"/>
+    <script  src="/course/jq/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src = "/course/jq/template.js" type="text/javascript"></script>
+    <script src="/course/jq/underscore.js" type="text/javascript"></script>
+    <script src="/course/js/zz_myAjax0.2.2.js" type="text/javascript"></script>
+    <script src="/course/js/footer.js" type="text/javascript"></script>
+    <script src="/course/js/dj_goto.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="defaul/css/bootstrap.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="defaul/assets/img/favicon.png"  />
+    <script>
+        $(function(){
+            footer.init($('#bottom'));
+            goto.init($("#GotoTop"));
+        });
+    </script>
+    <style>
+        .content{
+            width: 300px;
+            height: 70px;
+            background-color: #0b6cbc;
+        }
+    </style>
+</head>
+<body>
+
+<div class = "alert-and-mask-alert"></div>
+<div class = "alert-and-mask-mask"></div>
+<div class="header"></div>
+<div id = "down-header-box" class="down-header-box"></div>
+<div class="container clearfix">
+    <div class="course-nav-box">
+        <div class="nav-container">
+            <div class="title"><span class="title-allCourse-yang">全部课程:</span></div>
+            <div class="direction">
+                <div class="head">方向：</div>
+                <div class="choice">
+
+                    {{each nav}}
+                    <span name = "all" class = "all current" >
+                    </span>
+                    <span name = "fe" class = "fe"><a href="{{$value.url}}">{{$value.title}}</a> </span>
+                    {{/each}}
+                </div>
+            </div>

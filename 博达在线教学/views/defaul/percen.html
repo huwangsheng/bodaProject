@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056) -->
+<html lang="zxx" class=" mediaqueries">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- META DATA -->
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- TITLE OF SITE -->
+		<title>个人中心</title>
+
+		<!-- favicon -->
+		<link id="favicon" rel="icon" type="image/png" href="https://karizma-preview.netlify.com/images/favicon.ico">
+
+		<!-- Google Fonts-->
+		<link rel="stylesheet" href="/defaul/precen/css/font.css">
+
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" href="/defaul/precen/css/bootstrap.css">
+
+		<!-- splitlayout.css -->
+		<link rel="stylesheet" href="/defaul/precen/css/splitlayout.css">
+
+		<link rel="stylesheet" href="/defaul/precen/css/animations.css">
+
+		<!-- responsiveslides.css -->
+		<link rel="stylesheet" href="/defaul/precen/css/responsiveslides.css">
+
+		<!-- slick css -->
+		<link rel="stylesheet" href="/defaul/precen/css/slick.css">
+		<link rel="stylesheet" href="/defaul/precen/css/slick-theme.css">
+
+		<!-- magnific-popup.css -->
+		<link rel="stylesheet" href="/defaul/precen/css/magnific-popup.css">
+
+		<!-- font-awesome.min.css -->
+		<link rel="stylesheet" href="/defaul/precen/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="/defaul/precen/css/pe-icon-7-stroke.min.css">
+
+		<!-- Main style css -->
+		<link rel="stylesheet" href="/defaul/precen/css/style.css">
+
+		<!-- Responsive css -->
+		<link rel="stylesheet" href="/defaul/precen/css/responsive.css">
+
+	
+	</head>
+
+	<body>
+
+		<!--Start Preloader-->
+		<div class="page-loader startLoad">
+			<div class="loader startLoad"></div>
+		</div>
+		<!--End Preloader-->
+
+		<div id="splitlayout" class="splitlayout reset-layout close-right">
+			<div class="intro">
+
+				<!--Start Home-->
+				<div class="home_type full-height">
+					<div class="side side-left container" style="background-image: url(images/home_personal.jpg);">
+						<div class="overlayer">
+							<div id="particles-js"><canvas class="particles-js-canvas-el" width="499" height="878"></canvas></div>
+							<div class="display-table">
+								<div class="display-table-cell">
+									<h1 class="fit__text">我是<span id="typed"></span>
+										<br />
+									<span class="typed-cursor">这是我的个人中心</span></h1>
+									<div id="typed-strings">
+										<span>{{G.userinfo.intername}}</span>
+									</div>
+
+									<div class="more_info">
+										<div class="item">
+											<span class="info-title">网名 : </span>
+											<span class="info-body">{{G.userinfo.intername}} </span>
+										</div>
+
+										<div class="item">
+											<span class="info-title">年龄 : </span>
+											<span class="info-body">{{G.userinfo.age}} </span>
+										</div>
+
+										<div class="item">
+											<span class="info-title">生日: </span>
+											<span class="info-body">{{G.userinfo.birthday}}</span>
+										</div>
+
+										<div class="item">
+											<span class="info-title">E- mail: </span>
+											<span class="info-body">{{G.userinfo.Email}}</span>
+										</div>
+
+										<div class="item">
+											<span class="info-title">电话 : </span>
+											<span class="info-body">{{G.userinfo.phone}}</span>
+										</div>
+
+										<div class="item">
+											<span class="info-title">职业 : </span>
+											<span class="info-body">{{G.userinfo.occupation}}</span>
+										</div>
+
+										<a href="/course">返回</a>
+										<a href="#contact" class="goToSec">进入</a>
+
+									</div>
+									<!--.more_info-->
+								</div>
+								<!--.display-table-cell-->
+							</div>
+							<!--.display-table-->
+
+						</div>
+						<!--.overlayer-->
+					</div>
+					<!--.side-->
+				</div>
+				<!--.home_type-->
+				<!--End Home-->
+
+				<!--Start Menu-->
+				<div class="mob-menu-overlay"></div>
+				<div class="mob-menu">
+					<div class="mob-menu-content">
+						<div class="float-left">
+							<p class="menu-title">{{G.userinfo.intername}}</p>
+						</div>
+						<div class="float-right">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+						</div>
+					</div>
+				</div>
+				<div class="side side-right">
+					<div class="intro-content">
+						<div class="profile">
+							<img src="/defaul/precen/images/profile.jpg" alt="profile">
+						</div>
+						<h1>
+                            <span>{{G.userinfo.intername}}</span>
+                        </h1>
+						<div class="menu">
+
+							<!--Social links-->
+							<div class="social-icons">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-linkedin"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-vimeo"></i>
+								</a>
+							</div>
+
+							<!--Menu Items-->
+							<ul class="list-unstyled menu_list" id="menu">
+								<li>
+									<a href="#home" class="active_item">封面</a>
+								</li>
+								<li>
+									<a href="#about" class="">关于我</a>
+								</li>
+								<li>
+									<a href="#resume" class="">观看历史</a>
+								</li>
+								<li>
+									<a href="#services" class="">修改资料</a>
+								</li>
+								<li>
+									<a href="#portfolio" class="">隐私设置</a>
+								</li>
+							</ul>
+							<li>
+								<a href="{{_HOST_}}/loginOut">退出登陆</a>
+							</li>
+						</div>
+						<!--.menu-->
+					</div>
+					<!--.intro-content-->
+				</div>
+				<!--.side-->
+				<!--End Menu-->
+
+			</div>
+			<!-- /intro -->
+			<div class="page page-right full-height page-right-normal-height">
+				<div id="pt-main" class="pt-perspective page-inner">
+
+					<!--Start About Section-->
+					<section class="about padding-bottom-90 pt-page" id="about">
+						<div class="content">
+							<img class="center-block" src="/defaul/precen/images/me-1.jpg" alt="">
+							<div class="container">
+								<h1 class="fit__text">人生就在不断往高处攀登<span id="typed"></span></h1>
+								<h2 class="fit__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									不断学习&nbsp;&nbsp;&nbsp;&nbsp;充实自己<span id="typed"></span></h2>
+								<!-- Skills -->
+								<div class="skills row margin-top-45">
+									<div class="col-sm-6 item">
+										<h3 class="subtitle">个人资料
+                                            <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                        <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </h3>
+
+										<!-- 昵称 -->
+										<div class="skill">
+											<h5 class="name">昵称</h5>
+											<div>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="true"></span>
+											</div>
+											<span disabled="true">{{G.userinfo.intername}}</span>
+										</div>
+
+										<!-- 年龄 -->
+										<div class="skill">
+											<h5 class="name">年龄</h5>
+											<div>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="false"></span>
+											</div>
+											<span>{{G.userinfo.age}}</span>
+										</div>
+
+										<!-- 生日 -->
+										<div class="skill">
+											<h5 class="name">生日</h5>
+											<div>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="false"></span>
+												<span class="false"></span>
+											</div>
+											<span>{{G.userinfo.birthday}}</span>
+										</div>
+										
+										<!-- 职业 -->										
+										<div class="skill">
+											<h5 class="name">职业</h5>
+											<div>
+												<span class="true"></span>
+												<span class="false"></span>
+												<span class="false"></span>
+												<span class="false"></span>
+											</div>
+											<span>{{G.userinfo.occupation}}</span>
+										</div>
+
+									</div>
+									<div class="col-sm-6 item mob-margin-top-45">
+										<h3 class="subtitle">
+                                            <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                        <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </h3>
+
+										<!-- 电话号码 -->
+										<div class="skill">
+											<h5 class="name">{{G.userinfo.phone}}</h5>
+											<div>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="true"></span>
+											</div>
+											<span>+86 123 456 789</span>
+										</div>
+
+										<!-- 电子邮箱 -->
+										<div class="skill">
+											<h5 class="name">{{G.userinfo.Email}}</h5>
+											<div>
+												<span class="true"></span>
+												<span class="true"></span>
+												<span class="false"></span>
+											</div>
+											<span>email@Nodejs.com</span>
+										</div>
+
+										<!-- 爱好 -->
+										<div class="skill">
+											<h5 class="name">爱好</h5>
+											<div>
+												<span class="true"></span>
+												<span class="false"></span>
+												<span class="false"></span>
+											</div>
+											<span>{{G.userinfo.favor}}</span>
+										</div>
+
+									</div>
+								</div>
+								<!--.skills-->
+
+								<!--Fun Facts-->
+								<div class="fun-facts margin-top-45">
+									<h3 class="subtitle">获得荣誉
+                                        <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                    <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </h3>
+									<div class="row">
+										<div class="col-sm-3 col-xs-6">
+											<div class="item">
+												<span class="pe-7s-smile"></span>
+												<h4>150</h4>
+												<h5>登陆天数</h5>
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-6">
+											<div class="item">
+												<span class="pe-7s-flag"></span>
+												<h4>10</h4>
+												<h5>优秀回答</h5>
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-6 mob-margin-top-30">
+											<div class="item">
+												<span class="pe-7s-like2"></span>
+												<h4>250</h4>
+												<h5>获得点赞</h5>
+											</div>
+										</div>
+									</div>
+									<!--.row-->
+								</div>
+								<!--.fun-facts-->
+
+							</div>
+							<!--.container-->
+						</div>
+						<!--.content-->
+					</section>
+					<!--End About Section-->
+
+					<!--Start Resume Section-->
+					<section class="resume padding-bottom-90 pt-page" id="resume">
+						<div class="content">
+							<div class="container">
+								<div class="sec_title">
+									<h2>观看历史</h2>
+								</div>
+								<div class="row">
+
+									<!--Education-->
+									<div class="col-md-6">
+										<h3 class="subtitle">Education
+                                            <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                            <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                        </g>
+                                                    </g>
+                                            </svg>
+                                        </h3>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -10 -10</span>
+											</div>
+											<div class="content">
+												<h4>Python语言程序设计</h4>
+												<p>计算机是运算工具，更是创新平台，高效有趣地利用计算机需要更简洁实用的编程语言。Python简洁却强大、简单却专业，它是当今世界最受欢迎的编程语言，学好它终身受用。请跟随我们，学习并掌握Python语言，一起动起来，站在风口、享受创新！</p>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -10 -08</span>
+											</div>
+											<div class="content">
+												<h4>C语言程序设计</h4>
+												<p>C语言是古老而长青的编程语言，它具备了现代程序设计的基础要求，它的语法是很多其他编程语言的基础，在系统程序、嵌入式系统等领域依然是无可替代的编程语言，在各类编程语言排行榜上常年占据前两名的位置。 本课程是零基础的编程入门课，是后续的操作系统、编译原理、体系结构等课程的基石。</p>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -10 -07</span>
+											</div>
+											<div class="content">
+												<h4>网页设计基础</h4>
+												<p>《网页设计基础》课程，聚焦于网页的背后是什么，具有网页呈现和网页源代码双视角，将概念、技术、实践、方法相融合，为持续学习奠定基础！</p>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -10 -06</span>
+											</div>
+											<div class="content">
+												<h4>DevOps导论</h4>
+												<p>从概念出现，到业界广泛应用，DevOps展现了强大的影响力。这股DevOps浪潮已经超出了当初的敏捷方法。DevOps工程师（也称为全栈工程师）是目前业界最热需的职位之一。本课程带领大家入门DevOps，为职业生涯发展打下坚实基础。</p>
+											</div>
+										</div>
+
+									</div>
+									<!--.col-md-6--> 
+
+									<!--Education-->
+									<div class="col-md-6 mobSmart-margin-top-40">
+										<h3 class="subtitle">
+                                            <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                            <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                        </g>
+                                                    </g>
+                                            </svg>
+                                        </h3>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -10 -01</span>
+											</div>
+											<div class="content">
+												<h4>发展心理学</h4>
+												<p>发展心理学是关于人类个体从生命的孕育到生命的结束这一毕生过程中心理发展基本规律的学科。课程以随年龄的心理发展为主线，介绍了体能大脑、运动动作、认知、言语、社会性和个性等发展的过程及相互关系，有助于学生深入理解发展心理学重要理论、主要研究思路和典型研究范式，构建学科整体知识体系。</p>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -09 -30</span>
+											</div>
+											<div class="content">
+												<h4>音乐与人生</h4>
+												<p>人生如乐，乐如人生。生命的呈现如同音乐的表达，可以是独奏与独唱，也可以是协奏与重唱，更可能是合唱与交响，让我们走进“音乐与人生”的课堂，去感受音乐在人生中展开的绚丽，人生在音乐中绽放的光彩！</p>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -09 -28</span>
+											</div>
+											<div class="content">
+												<h4>创新设计前沿</h4>
+												<p>《创新设计前沿》整合创意与概念、技术与智造、用户为中心、社会与文化、审美与感官、市场与商业等理论和方法，使学生掌握如何运用定性和定量的研究方法，如何转化合适的科技成果并创造出新产品。它通过案例分析和企业导师分享，帮助学生理解创新设计前沿发展趋势。培养创新创业者的核心竞争力。</p>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="date">
+												<span>2019 -09 -25</span>
+											</div>
+											<div class="content">
+												<h4>人体工程学</h4>
+												<p>我们的周围充斥着各种各样的产品，好的产品让我们的生活充满幸福与快乐，但也有一些产品让我们痛苦与迷茫。是不是在这些产品背后有着看不见的规则在支配着它们，使其呈现出各种不同的性格与特点？应该如何通过设计让产品与人和谐相处，而不是针锋相对？这正是这门课《人机工程学》课程所要解决的问题。</p>
+											</div>
+										</div>
+
+									</div>
+									<!--.col-md-6-->
+								</div>
+								<!--.row-->
+							</div>
+							<!--.container-->
+						</div>
+						<!--.content-->
+					</section>
+					<!--End Resume Section-->
+
+					<!--Start Services Section-->
+					<section class="services padding-bottom-90 pt-page" id="services">
+						<div class="content">
+							<div class="container">
+								<div class="sec_title">
+									<h2>修改资料</h2>
+								</div>
+
+								<!-- Skills -->
+								<div class="skills row margin-top-45">
+									<div class="col-sm-6 item">
+										<h3 class="subtitle">个人信息
+                                            <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                            <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                        </g>
+                                                    </g>
+                                            </svg>
+                                        </h3>
+										<br />
+										<form action="{{__HOST__}}/doEditInfo" method="post" class="form-horizontal" role="form">
+											<div class="form-group">
+												<div class="col-sm-10">
+													<input type="hidden" name="id"  value="{{G.userinfo._id}}"/>
+													<input type="text" class="form-control" placeholder="Old_Passwprd" value="{{G.userinfo.username}}" aria-describedby="sizing-addon1"  disabled="true">
+													<span>用户名</span>
+												</div>
+											</div>
+
+											<!-- 新密码 -->
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="intername" name="intername">
+												<span>昵称</span>
+											</div>
+
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="age" name="age">
+												<span>年龄</span>
+											</div>
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="birthday" name="birthday">
+												<span>生日</span>
+											</div>
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="Email" name="Email">
+												<span>Email</span>
+											</div>
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="phone" name="phone">
+												<span>移动电话</span>
+											</div>
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="occupation" name="occupation">
+												<span>职业</span>
+											</div>
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="gender" name="gender">
+												<span>性别</span>
+											</div>
+											<div class="skill">
+												<input type="text"  class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="favor" name="favor">
+												<span>爱好</span>
+											</div>
+
+
+											<div>
+												<button class="button">
+													<span class="submit">Submit</span>
+												</button>
+											</div>
+											<!--&lt;!&ndash; 昵称 &ndash;&gt;-->
+										<!--<input type="hidden" name="id"  value="{{G.userinfo._id}}"/>-->
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" id="intername",name="intername">-->
+											<!--<span>昵称</span>-->
+										<!--</div>-->
+
+										<!--&lt;!&ndash; 年龄 &ndash;&gt;-->
+											<!--&lt;!&ndash;<div class="skill">&ndash;&gt;-->
+												<!--&lt;!&ndash;<input type="password" name="age" class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="age">&ndash;&gt;-->
+												<!--&lt;!&ndash;<span>年龄</span>&ndash;&gt;-->
+											<!--&lt;!&ndash;</div>&ndash;&gt;-->
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="Age" aria-describedby="sizing-addon1" id="age",name="age">-->
+											<!--<span>年龄</span>-->
+										<!--</div>-->
+
+										<!--&lt;!&ndash; 生日 &ndash;&gt;-->
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="BirthDay" aria-describedby="sizing-addon1" id="birthday",name="birthday" >-->
+											<!--<span>生日</span>-->
+										<!--</div>-->
+
+										<!--&lt;!&ndash; 职业 &ndash;&gt;-->
+
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="Work" aria-describedby="sizing-addon1" id="occupation",name="occupation" >-->
+											<!--<span>职业</span>-->
+										<!--</div>-->
+									<!--</div>-->
+									<!--<div class="col-sm-6 item mob-margin-top-45">-->
+										<!--<h3 class="subtitle">&nbsp;&nbsp;-->
+                                            <!--<svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+                                                <!--<g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">-->
+                                                    <!--<g class="Header" stroke="#FFFFFF" stroke-width="3">-->
+                                                        <!--<path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>-->
+                                                    <!--</g>-->
+                                                <!--</g>-->
+                                            <!--</svg>-->
+                                        <!--</h3>-->
+										<!--<br />-->
+										<!--&lt;!&ndash; 电话号码 &ndash;&gt;-->
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="Telephone" aria-describedby="sizing-addon1"  id="phone",name="phone">-->
+											<!--<span>电话号码</span>-->
+										<!--</div>-->
+
+										<!--&lt;!&ndash; 电子邮箱 &ndash;&gt;-->
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="E-mail" aria-describedby="sizing-addon1" id="Email",name="Email">-->
+											<!--<span>电子邮箱</span>-->
+										<!--</div>-->
+
+										<!--&lt;!&ndash; 爱好 &ndash;&gt;-->
+										<!--<div class="skill">-->
+ 										 <!--<input type="text" class="form-control" placeholder="Hobby" aria-describedby="sizing-addon1" id="favor",name="favor">-->
+											<!--<span>爱好</span>-->
+										<!--</div>-->
+
+										<!--<div>-->
+											<!--<button class="button">-->
+												<!--<span class="submit">Submit</span>-->
+											<!--</button>-->
+										<!--</div>-->
+										</form>
+									</div>
+								</div>
+								<!--.skills-->
+
+
+
+							</div>
+							<!--.container-->
+						</div>
+						<!--.content-->
+					</section>
+					<!--End Services Section-->
+
+					<!--Start Portfolio Section-->
+					<section class="portfolio_sec padding-bottom-90 pt-page" id="portfolio">
+						<div class="content">
+							<div class="container">
+								<div class="sec_title">
+									<h2>隐私设置</h2>
+								</div>
+								<!-- Skills -->
+								<div class="skills row margin-top-45">
+									<div class="col-sm-6 item">
+										<h3 class="subtitle">修改密码
+                                            <svg width="66px" height="8px" viewBox="0 0 66 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g class="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -464.000000)" opacity="0.2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <g class="Header" stroke="#FFFFFF" stroke-width="3">
+                                                            <path d="M149,466 C152.87377,466 152.87377,470 156.747541,470 C160.621311,470 160.621311,466 164.493293,466 C168.367064,466 168.367064,470 172.240834,470 C176.112816,470 176.112816,466 179.984798,466 C183.858569,466 183.858569,470 187.730551,470 C191.607898,470 191.607898,466 195.483457,466 C199.362593,466 199.362593,470 203.241728,470 C207.120864,470 207.120864,466 211,466"></path>
+                                                        </g>
+                                                    </g>
+                                            </svg>
+                                        </h3>
+										<br />
+										<form action="{{__HOST__}}/doEdit" method="post" class="form-horizontal" role="form">
+
+											<div class="form-group">
+												<div class="col-sm-10">
+													<input type="hidden" name="id"  value="{{G.userinfo._id}}"/>
+													<input type="text" class="form-control" placeholder="Old_Passwprd" value="{{G.userinfo.username}}" aria-describedby="sizing-addon1"  disabled="true">
+													<span>用户名</span>
+												</div>
+											</div>
+										    <div>
+											<input type="text" class="form-control" placeholder="Old_Passwprd" aria-describedby="sizing-addon1" >
+											<span>原始密码</span>
+											</div>
+
+											<!-- 新密码 -->
+											<div class="skill">
+											<input type="password" name="password" class="form-control" placeholder="New_Password" aria-describedby="sizing-addon1"  id="password">
+											<span>新密码</span>
+											</div>
+											<!--<div class="form-group">-->
+												<!--<label class="col-sm-2 control-label no-padding-right" for="password">密 码:</label>-->
+
+												<!--<div class="col-sm-10">-->
+													<!--<input type="password" id="password"  name="password" class="col-xs-10 col-sm-5" />-->
+												<!--</div>-->
+											<!--</div>-->
+
+											<!-- 重复新密码 -->
+											<div class="skill">
+											<input type="password" class="form-control" name="rpassword" placeholder="Verify_New_Password" aria-describedby="sizing-addon1" id="rpassword">
+											<span>重复新密码</span>
+											</div>
+
+
+
+											<div>
+												<button class="button">
+													<span class="submit">Submit</span>
+												</button>
+											</div>
+									</form>
+									
+								</div>
+								<!--.skills-->
+							</div>
+							<!--.container-->
+						</div>
+						<!--.content-->
+					</section>
+					<!--End Portfolio Section-->
+
+
+				</div>
+				<!--.page-inner-->
+			</div>
+			<!--.page-right-->
+		</div>
+		<!--.splitlayout-->
+
+		<!--jquery.min.js-->
+		<script src="/defaul/precen/js/jquery.min.js"></script>
+
+		<!--jquery.min.js-->
+		<script src="/defaul/precen/js/jquery-migrate-1.2.1.min.js"></script>
+
+		<!--jquery.matchHeight-min.js-->
+		<script src="/defaul/precen/js/jquery.matchHeight-min.js"></script>
+
+		<!--jquery.alterclass.js-->
+		<script src="/defaul/precen/js/jquery.alterclass.js"></script>
+
+		<!--bootstrap.min.js-->
+		<script src="/defaul/precen/js/bootstrap.min.js"></script>
+
+		<!--particles.min.js-->
+		<script src="/defaul/precen/js/particles.min.js"></script>
+
+		<!--app.js-->
+		<script src="/defaul/precen/js/app.js"></script>
+
+		<!--modernizr.custom.js-->
+		<script src="/defaul/precen/js/modernizr.custom.js"></script>
+
+		<!--typed.min.js-->
+		<script src="/defaul/precen/js/typed.min.js"></script>
+
+		<!--responsiveslides.min.js-->
+		<script src="/defaul/precen/js/responsiveslides.min.js"></script>
+
+		<!--jquery.fittext.js-->
+		<script src="/defaul/precen/js/jquery.fittext.js"></script>
+
+		<!--isotope.pkgd.min.js-->
+		<script src="/defaul/precen/js/isotope.pkgd.min.js"></script>
+
+		<!--jquery.magnific-popup.min.js-->
+		<script src="/defaul/precen/js/jquery.magnific-popup.min.js"></script>
+
+		<!-- Main script js -->
+		<script src="/defaul/precen/js/custom.js"></script>
+
+	</body>
+
+</html>

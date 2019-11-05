@@ -1,0 +1,39 @@
+<div id="bottom" class="clear"></div>
+<div id="GotoTop" class="GotoTop-info"></div>
+</body>
+</html>
+<!--模板-->
+<script type = "type/template" id = "mainlist-template">
+    <li class="course-one">
+        <a href="/view/489" target="_self">
+            <div class="course-list-img">
+                <img width="240" height="135" alt="<%= title %>" src="<%= image %>">
+            </div>
+            <h5>
+                <span><%= title %></span>
+            </h5>
+            <div class="tips">
+                <p class="text-ellipsis"><%= content %></p>
+                <span class="l "><%= info %></span>
+
+                <span class="l ml20">
+                    <%= student %>
+                </span>
+            </div>
+            <span class="time-label"><%= time %></span>
+            <b class="follow-label">跟我学</b>
+        </a>
+    </li>
+
+</script>
+<!--<script src = "/course/js/mainPart.js"></script>-->
+<script src = "/course/js/headerPart.js"></script>
+<script src = "/course/js/Ngrade_login.js"></script>
+<script src = "/course/js/zhanshi.js"></script>
+<script>
+    header.init($(".header"))
+</script>
+
+<script src="/defaul/js/jquery-1.10.2.min.js"></script>
+<script src="/defaul/js/jqPaginator.js"></script>
+

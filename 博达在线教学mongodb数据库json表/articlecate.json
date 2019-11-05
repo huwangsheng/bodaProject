@@ -1,0 +1,31 @@
+{"_id":{"$oid":"5d8d64de45fda84bc43279e3"},"description":"计算机是运算工具，更是创新平台，高效有趣地利用计算机需要更简洁实用的编程语言。Python简洁却强大、简单却专业，它是当今世界最受欢迎的编程语言，学好它终身受用。请跟随我们，学习并掌握Python语言，一起动起来，站在风口、享受创新！","keywords":"计算机","pid":"0","status":1,"title":"计算机"}
+{"_id":{"$oid":"5d8d65d145fda84bc43279e5"},"description":"”心理课，正能量的“烧脑”之旅。言语犀利，案例丰富，思维训练，实用性强，主讲人裴秋宇老师凝聚19年心理医生“心战”经历、15年世界五百强员工心理内训精华。","keywords":"心里","pid":"0","status":"1","title":"心理学"}
+{"_id":{"$oid":"5d8d660545fda84bc43279e6"},"description":"中国陶瓷在世界艺术之林中始终属于殿堂级现象，傲然屹立于神秘的东方古国。 由于一些客观因素和历史背景的缘故，他身上笼罩着若隐若现的迷雾，大多震铄古今的名窑名器都存在着很多有意思的未解之谜。 本课程将顺着时间的流动，拨开层层迷雾，走近我们引以为傲的国粹陶瓷，揭开他美丽而神秘的面纱。","keywords":"艺术设计\u0009","pid":"0","status":"1","title":"艺术设计\u0009"}
+{"_id":{"$oid":"5d8dc7fcfb0ef242301cc4f8"},"description":"","keywords":"软件编程 ","pid":"5d8d64de45fda84bc43279e3","status":1,"title":"软件编程 "}
+{"_id":{"$oid":"5d8dcfc079e7964a948eb66e"},"description":"计算机应用基础是一门公共课程，为学员们介绍如何运用计算机进行日常的办公和学习。该课程具体介绍了计算机基础知识、计算机软硬件系统、Word文字编辑、Excel电子表格、PowerPoint电子演示文稿以及计算机网络等多方面的内容，注重培养计算机实用技能和案例教学。","keywords":"计应基础\u0009","pid":"5d8d64de45fda84bc43279e3","status":1,"title":"计算机基础与应用\u0009"}
+{"_id":{"$oid":"5d8dcff579e7964a948eb66f"},"description":"视角独特的“主持型”心理课，正能量的“烧脑”之旅。言语犀利，案例丰富，思维训练，实用性强，主讲人裴秋宇老师凝聚19年心理医生“心战”经历、15年世界五百强员工心理内训精华。","keywords":"沟通","pid":"5d8d65d145fda84bc43279e5","status":"1","title":"多态心理学"}
+{"_id":{"$oid":"5d8dd07f79e7964a948eb672"},"description":"既古老又年轻的科学！既是理论也是应用的学科！它就是有趣又神秘的心理学。《大学生心理健康教育》课程将带你掀开一角的神秘面纱，通过课程学习，增强大学生解决心理问题的能力，提高大学生的心理素质，促进大学生身心健康发展。","keywords":"心理健康\u0009","pid":"5d8d65d145fda84bc43279e5","status":"1","title":"心理健康\u0009"}
+{"_id":{"$oid":"5d8dd91f79e7964a948eb684"},"description":"","keywords":"艺术学","pid":"5d8d660545fda84bc43279e6","status":"1","title":"艺术学"}
+{"_id":{"$oid":"5d8dd93879e7964a948eb685"},"description":"","keywords":"音乐 舞蹈","pid":"5d8d660545fda84bc43279e6","status":1,"title":"音乐与舞蹈"}
+{"_id":{"$oid":"5d908c8d9509205004b8833c"},"description":"12","keywords":"12","pid":"5d908c719509205004b8833b","status":"1","title":"测试分类下的二级分类"}
+{"_id":{"$oid":"5d908cbd9509205004b8833d"},"description":"","keywords":"软件工程","pid":"5d8d64de45fda84bc43279e3","status":"1","title":"软件工程"}
+{"_id":{"$oid":"5d908d359509205004b88342"},"description":"","keywords":"网络安全","pid":"5d8d64de45fda84bc43279e3","status":"1","title":"网络与安全技术"}
+{"_id":{"$oid":"5d92aad7d48cc839c4e86f10"},"description":"","keywords":"语言学习","pid":"5d92aad7d48cc839c4e86f10","status":"1","title":"语言学习"}
+{"_id":{"$oid":"5d92af508de2af11b46c2be2"},"description":"","keywords":"英语系列","pid":"5d92ab2dd48cc839c4e86f11","status":"1","title":"英语系列"}
+{"_id":{"$oid":"5d92b41436f1bd09ecf4a5f8"},"description":"","keywords":"springBOOt","pid":"5d92b0188de2af11b46c2be3","status":"1","title":"springBOOt从入门到精通"}
+{"_id":{"$oid":"5d99ec1d6f93e5184414ffd8"},"description":"","keywords":"语法","pid":"5d92ab2dd48cc839c4e86f11","status":"1","title":"法语系列"}
+{"_id":{"$oid":"5d9ee0f0591120241071bc41"},"description":"设计学","keywords":"设计","pid":"5d8d660545fda84bc43279e6","status":"1","title":"设计学"}
+{"_id":{"$oid":"5d9ee3eb591120241071bc42"},"description":"金融","keywords":"金融","pid":"0","status":"1","title":"经济学"}
+{"_id":{"$oid":"5d9ee409591120241071bc43"},"description":"经济与商贸","keywords":"经济与商贸","pid":"5d9ee3eb591120241071bc42","status":"1","title":"经济与商贸"}
+{"_id":{"$oid":"5d9ee418591120241071bc44"},"description":"财政与金融","keywords":"财政与金融","pid":"5d9ee3eb591120241071bc42","status":"1","title":"财政与金融"}
+{"_id":{"$oid":"5d9ee4c0591120241071bc45"},"description":"历史","keywords":"历史","pid":"0","status":"1","title":"历史"}
+{"_id":{"$oid":"5d9ee4d6591120241071bc46"},"description":"中国历史","keywords":"中国历史","pid":"5d9ee4c0591120241071bc45","status":"1","title":"中国历史"}
+{"_id":{"$oid":"5d9ee4ea591120241071bc47"},"description":"国际历史","keywords":"国际历史","pid":"5d9ee4c0591120241071bc45","status":"1","title":"国际历史"}
+{"_id":{"$oid":"5d9fdc9c626e5e2b501cf245"},"description":"","keywords":"工商学","pid":"5d8d660545fda84bc43279e6","status":"1","title":"工商学"}
+{"_id":{"$oid":"5d9fe73b1d10bf11b85e1b4f"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"01"}
+{"_id":{"$oid":"5d9fe74f1d10bf11b85e1b50"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"02"}
+{"_id":{"$oid":"5d9fe75c1d10bf11b85e1b51"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"03"}
+{"_id":{"$oid":"5d9fe7671d10bf11b85e1b52"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"04"}
+{"_id":{"$oid":"5d9fe7881d10bf11b85e1b53"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"05"}
+{"_id":{"$oid":"5d9fe7ac1d10bf11b85e1b54"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"06"}
+{"_id":{"$oid":"5d9fe895420589297075f7cc"},"description":"","keywords":"","pid":"5d9fe339e2540c0544351e33","status":"1","title":"07"}
